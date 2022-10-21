@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <!-- <link rel="manifest" href="favicon/site.webmanifest"> -->
+        <title>Pond of Life</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- I really couldn't find a way to reload the javascript without reloading the whole page.
+    I think I got close with this > http://www.philnicholas.com/2009/05/11/reloading-your-javascript-without-reloading-your-page/-->
+    <body onLoad="LoadMyJs()"> 
+        <!-- <input type="button" name="reloadjs" value="Reload JavaScript" onclick="LoadMyJs('index.js')"> -->
+        <canvas onmousedown="window.location.reload();">
+        <script src=index.js></script>
+    </canvas>
+    
+        
+        <style></style>
+
+        <!-- <button onClick="window.location.reload()">Refresh Page</button> -->
+    </body>
+</html>
